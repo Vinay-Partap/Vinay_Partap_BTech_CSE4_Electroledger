@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroLedger - Expense Tracker</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="ElectroLedger Logo" class="logo">
+            <h2>ElectroLedger</h2>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button>🔍</button>
+        </div>
+        <div class="account-menu">
+            <span class="material-icons account-icon">account_circle</span>
+            <div class="dropdown-menu">
+                <a href="signup.html" id="signup-btn">Sign Up</a>
+                <a href="login.html" id="login-btn">Login</a>
+                <a href="forgot-password.html" id="forgot-password">Forgot Password?</a>
+                <a href="profile.html" id="view-profile">View Profile</a>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="dashboard.html">📊 Dashboard</a></li>
+            <li><a href="transaction.html">💸 Expenses</a></li>
+            <li><a href="record.html">📜 Record</a></li>
+            <li><a href="#">📷 Scan</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="insights">
+            <div class="report">
+                <img src="monthly_report.jpg" alt="Monthly Income Report">
+            </div>
+            <div class="info-box">
+                <h2>Track your monthly spending like a pro! 💰</h2>
+                <p>Review transactions, track spending by category, and get smart insights.</p>
+                <a href="features.html" class="learn-more-btn">Learn More</a>
+            </div>
+        </section>
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger
+            intent="WELCOME"
+            chat-title="ChatBot"
+            agent-id="fc9f14e1-694b-41cb-aa17-d3a9b131646c"
+            language-code="en">
+        </df-messenger>
+    </main>
+    
+    <footer>
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>📞 +91XXXXXXXXXX</p>
+            <p>📧 support@electroledger.com</p>
+        </div>
+        
+        <div class="categories">
+            <h3>CATEGORIES</h3>
+            <ul>
+                <li>Salary/Wages</li>
+                <li>Freelance</li>
+                <li>Side Income</li>
+                <li>Investments/Dividends</li>
+                <li>Utilities (electricity, water, gas)</li>
+                <li>Internet/Phone Bills</li>
+                <li>Insurance (health, car, life)</li>
+            </ul>
+        </div>
+        <div class="information">
+            <h3>INFORMATION</h3>
+            <ul>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Terms & Conditions</li>
+                <li>Delivery & Returns</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Order Track</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

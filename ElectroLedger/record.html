@@ -1,0 +1,224 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Income</title>
+    <style>
+        body {
+            background-color: #0d1117;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: #30363d;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header .icons {
+            display: flex;
+            gap: 10px;
+        }
+        .header .icons i {
+            font-size: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group .flex {
+            display: flex;
+            gap: 10px;
+        }
+        .form-group .flex input {
+            flex: 1;
+        }
+        .form-group .flex span {
+            align-self: center;
+        }
+        .form-group .toggle-checkbox {
+            margin-right: 5px;
+        }
+        .form-group .total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .form-group .total span {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .form-group .add-button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group .add-button i {
+            font-size: 16px;
+        }
+        .footer {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+        .footer button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .footer .cancel {
+            color: #6c757d;
+        }
+        .footer .save {
+            background-color: #28a745;
+            color: white;
+        }
+        .footer .save-next {
+            background-color: #28a745;
+            color: white;
+        }
+        .home-tab {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .photo-link {
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home-tab">Home</a>
+    <div class="container">
+        <div class="header">
+            <h1>NEW INCOME</h1>
+            <div class="icons">
+                <i class="fas fa-info-circle"></i>
+                <i class="fas fa-sync-alt"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="flex">
+                <div class="w-12 h-12 bg-gray-300 rounded-full"></div>
+                <div class="flex-1">
+                    <label>Category</label>
+                    <input type="text" placeholder="Select category">
+                </div>
+                <div class="flex-1">
+                    <label>Value</label>
+                    <div class="flex">
+                        <input type="text">
+                        <span>$</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="flex">
+                <label class="flex items-center">
+                    <input type="checkbox" class="toggle-checkbox">
+                    <span>Is a refund?</span>
+                </label>
+                <div class="flex-1 text-right total">
+                    <span>Total:</span>
+                    <span>$0.00</span>
+                </div>
+                <button class="add-button">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="flex">
+                <i class="fas fa-university text-2xl"></i>
+                <div class="flex-1">
+                    <label>Account</label>
+                    <select>
+                        <option>Wallet</option>
+                    </select>
+                </div>
+                <label class="flex items-center">
+                    <input type="checkbox" class="toggle-checkbox">
+                    <span>Checked</span>
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="flex">
+                <i class="fas fa-calendar-alt text-2xl"></i>
+                <div class="flex-1">
+                    <label>Date</label>
+                    <input type="text" value="03/03/2025">
+                </div>
+                <div class="flex-1">
+                    <label>Time</label>
+                    <input type="text" value="14:36">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="flex">
+                <i class="fas fa-user text-2xl"></i>
+                <div class="flex-1">
+                    <label>From (Optional)</label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="flex">
+                <i class="fas fa-pencil-alt text-2xl"></i>
+                <div class="flex-1">
+                    <label>Notes (Optional)</label>
+                    <textarea></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="form-group text-center">
+            <a href="#" class="photo-link">PHOTO (DROPBOX REQUIRED)</a>
+        </div>
+        <div class="footer">
+            <button class="cancel">CANCEL</button>
+            <button class="save">SAVE</button>
+            <button class="save-next">SAVE -></button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroLedger - Transaction</title>
+    <link rel="stylesheet" href="transaction.css">
+    <script defer src="transaction.js"></script>
+    </head>
+    
+    <body>
+        <li><a href="index.html">🏠 Home</a></li>
+        <br><br>
+        <div class="header-container">
+            <h1 class="main-heading">Transactions</h1>
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <div class="filter-section">
+              <h2>FILTER</h2>
+              <label for="category">Category</label>
+              <input type="text" id="category" name="category">
+              <label for="from-to">From / To</label>
+              <input type="text" id="from-to" name="from-to">
+              <label for="notes">Notes</label>
+              <input type="text" id="notes" name="notes">
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="checked" checked> Checked</label>
+                <label><input type="checkbox" name="not-checked" checked> Not checked</label>
+              </div>
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="expenses" checked> Expenses</label>
+                <label><input type="checkbox" name="income" checked> Income</label>
+                <label><input type="checkbox" name="transfer"> Transfer between accounts</label>
+              </div>
+              <button class="cancel-button">CANCEL</button>
+            </div>
+        
+            <div class="transactions-section">
+              <div class="transactions-header">
+                <button>&lt;</button>
+                <span>March 2025</span>
+                <button>&gt;</button>
+              </div>
+              <div class="transaction-list">
+                <div class="transaction-item">
+                  <div class="left">
+                    <span class="icon">🍹</span>
+                    <div>Bar<br>Wallet</div>
+                  </div>
+                  <div class="right">
+                    -Rs.2.00<br>03/03/2025
+                  </div>
+                </div>
+                <div class="transaction-item">
+                  <div class="left">
+                    <span class="icon">🎉</span>
+                    <div>Entertainment<br>Wallet</div>
+                  </div>
+                  <div class="right">
+                    -Rs.8.00<br>03/02/2025
+                  </div>
+                </div>
+                <div class="transaction-item">
+                  <div class="left">
+                    <span class="icon">🍽</span>
+                    <div>Eating out<br>Credit card</div>
+                  </div>
+                  <div class="right">
+                    -Rs.16.00<br>03/02/2025
+                  </div>
+                </div>
+                <div class="transaction-item">
+                  <div class="left">
+                    <span class="icon">🛍</span>
+                    <div>Shopping, Food - Pets<br>Credit card</div>
+                  </div>
+                  <div class="right">
+                    -Rs.50.00<br>03/01/2025
+                  </div>
+                </div>
+              </div>
+              <div class="actions">
+                <button>+</button>
+                <button class="negative">-</button>
+              </div>
+              
+            </div>
+          </div>
+        
+    
+    </body>
+</html>

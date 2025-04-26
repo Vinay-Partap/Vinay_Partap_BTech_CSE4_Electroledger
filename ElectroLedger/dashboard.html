@@ -1,0 +1,206 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            background-color: #0d1117;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #161b22;
+            color: white;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header i {
+            margin-right: 16px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .container {
+            padding: 16px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+        @media (min-width: 768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 1024px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .box {
+            background-color: #30363d;
+            padding: 16px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+        .box h2 {
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .box p {
+            margin: 8px 0;
+        }
+        .box img {
+            display: block;
+            margin: 0 auto;
+        }
+        .progress-bar {
+            background-color: #d1d5db;
+            border-radius: 8px;
+            height: 10px;
+            overflow: hidden;
+        }
+        .progress-bar div {
+            height: 100%;
+            border-radius: 8px;
+        }
+        .fixed-buttons {
+            position: fixed;
+            bottom: 16px;
+            right: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .fixed-buttons button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .fixed-buttons button.red {
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="flex items-center">
+            <i class="fas fa-bars"></i>
+            <h1>Overview</h1>
+        </div>
+        <a href="index.html">Home</a>
+    </div>
+    <div class="container">
+        <div class="box">
+            <h2>Summary</h2>
+            <p>Balance: <span style="color: #28a745;">Rs.13,627.71</span></p>
+            <p>Credit cards: <span style="color: #dc3545;">-Rs.249.00</span></p>
+            <p style="color: #28a745;">Rs.13,378.71</p>
+        </div>
+        <div class="box">
+            <div class="text-center">
+                <img src="https://storage.googleapis.com/a1aa/image/nPjxXTsNfL6JDIIS3_ErJZdKtL-iSuVh0puJJxxIarI.jpg" alt="100% red circle" width="100" height="100">
+                <h2>This month</h2>
+                <p><i class="fas fa-arrow-up" style="color: #28a745;"></i> Rs.0.00</p>
+                <p><i class="fas fa-arrow-down" style="color: #dc3545;"></i> -Rs.76.00</p>
+                <p style="color: #dc3545;">-Rs.76.00</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="text-center">
+                <img src="https://storage.googleapis.com/a1aa/image/TeQcT0m0TMbcNDwckHj0NJjw4IMdsz8zGR6hoQIUK8Q.jpg" alt="72.8% green and 27.2% red circle" width="100" height="100">
+                <h2>Last month</h2>
+                <p><i class="fas fa-arrow-up" style="color: #28a745;"></i> Rs.1,452.00</p>
+                <p><i class="fas fa-arrow-down" style="color: #dc3545;"></i> -Rs.541.29</p>
+                <p style="color: #28a745;">Rs.910.71</p>
+            </div>
+        </div>
+        <div class="box">
+            <h2>Accounts</h2>
+            <p>Wallet</p>
+            <p>Bank account <span style="color: #28a745;">Rs.90.24 IND - Rs.</span></p>
+            <p style="color: #28a745;">Rs.13,537.47 IND - Rs.</p>
+        </div>
+        <div class="box">
+            <h2>Credit cards</h2>
+            <p>Credit card <span style="color: #dc3545;">-Rs.66.00</span></p>
+            <div class="progress-bar">
+                <div style="width: 7%; background-color: #28a745;"></div>
+            </div>
+            <p class="text-right">7%</p>
+        </div>
+        <div class="box">
+            <h2>Balance</h2>
+            <img src="https://storage.googleapis.com/a1aa/image/oKMbOhUMYOPjxrAhn9_w3WLYwWgR_MB7jT6RlhZ3Vfg.jpg" alt="Balance chart" width="300" height="200">
+        </div>
+        <div class="box">
+            <h2>Last 7 days</h2>
+            <img src="https://storage.googleapis.com/a1aa/image/MF2cSzITrN2JSkgynhQihevkjcdPuQAOJrc20XDS3Qw.jpg" alt="Last 7 days chart" width="300" height="200">
+        </div>
+        <div class="box">
+            <h2>Budgets</h2>
+            <div class="flex items-center">
+                <img src="https://storage.googleapis.com/a1aa/image/JvU_rZvb5UzaO1swlqzJLmxC8lwyfngDP7H2AGAuFN4.jpg" alt="Entertainment icon" width="40" height="40" class="rounded-full">
+                <div class="ml-4 w-full">
+                    <p>Entertainment</p>
+                    <p class="text-sm text-gray-500">03/03/2025 - 03/09/2025</p>
+                    <div class="progress-bar">
+                        <div style="width: 0%; background-color: #28a745;"></div>
+                    </div>
+                    <p class="text-right">0%</p>
+                </div>
+            </div>
+            <div class="flex items-center mt-4">
+                <img src="https://storage.googleapis.com/a1aa/image/ParOQwLpzvv6IUr_BsKrkAb1icFDwRwh2q1_jLfL5FU.jpg" alt="Eating out icon" width="40" height="40" class="rounded-full">
+                <div class="ml-4 w-full">
+                    <p>Eating out</p>
+                    <p class="text-sm text-gray-500">03/01/2025 - 03/31/2025</p>
+                    <div class="progress-bar">
+                        <div style="width: 16%; background-color: #28a745;"></div>
+                    </div>
+                    <p class="text-right">16%</p>
+                </div>
+            </div>
+            <div class="flex items-center mt-4">
+                <img src="https://storage.googleapis.com/a1aa/image/9UXcrLHKqcH7TCO5OxHsCLdmeLOXYbab2xUfEUvWeGc.jpg" alt="Fuel icon" width="40" height="40" class="rounded-full">
+                <div class="ml-4 w-full">
+                    <p>Fuel</p>
+                    <p class="text-sm text-gray-500">03/01/2025 - 03/31/2025</p>
+                    <div class="progress-bar">
+                        <div style="width: 0%; background-color: #28a745;"></div>
+                    </div>
+                    <p class="text-right">0%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed-buttons">
+        <button>
+            <i class="fas fa-plus"></i>
+        </button>
+        <button class="red">
+            <i class="fas fa-minus"></i>
+        </button>
+    </div>
+</body>
+</html>
